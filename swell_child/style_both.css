@@ -1,0 +1,45 @@
+/**
+ * フロントとエディタの両方に適応するスタイル
+ */
+
+@charset "UTF-8";
+
+body * {
+  font-feature-settings: "palt";
+}
+
+/*改行禁止*/
+.nowrap {
+  white-space: nowrap !important;
+}
+/*ヘッダーアレンジ 縦書き*/
+.is-style-vertical-text {
+  -ms-writing-mode: tb-rl;
+  writing-mode: vertical-rl;
+}
+
+/* 小さなデバイス  (スマホ, 768pxとそれ以下)*/
+@media (max-width: 768px) {
+}
+
+/* 中間のデバイス(タブレット, 768以上992px以下)*/
+@media (min-width: 768.01px) and (max-width: 992px) {
+}
+
+/*Swellのメディアクエリ*/
+@media (min-width: 782px) {
+}
+
+@media (min-width: 600px) and (max-width: 781px) {
+}
+
+/* 600pxより小さいと--swl-fz--root:3.6vwで、ルートの文字サイズがレスポンシブになってる。
+ * emやrem指定のフォントが画面サイズによってスケールしちゃう。
+ * レスポンシブが嫌ならルートのフォントサイズを固定して、画面サイズごとに指定する。*/
+@media (max-width: 600px) {
+  /*
+	html{
+		font-size:16px;
+	}
+  */
+}
