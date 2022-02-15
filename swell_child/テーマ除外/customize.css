@@ -1,3 +1,23 @@
+/*基本*/
+body {
+  letter-spacing: 0.1em;
+}
+a:hover {
+  opacity: 0.7;
+}
+/*全幅から左paddingをコンテンツサイズまで縮める*/
+.full-justify-left {
+  padding-left: calc((100vw - var(--container_size, 0px)) / 2);
+}
+svg.icon_instagram {
+  width: 23.3px;
+  height: 23.3px;
+}
+svg.icon_blog {
+  width: 28.5px;
+  height: 26.7px;
+}
+
 /*Header上*/
 .upper-header-imges {
   padding-left: calc((100vw - var(--container_size, 0px)) / 2);
@@ -15,7 +35,40 @@
 .l-header {
   box-shadow: 0 1px 2px rgb(0 0 0 / 12%);
 }
+.l-header__inner .cls-1 {
+  fill: #595757;
+}
+.icon-instagram:before {
+  color: #595757;
+}
+#gnav a:hover {
+  opacity: 1;
+}
 
+/*TOPページ*/
+.top-hero-title-block {
+  padding-top: 90px !important;
+}
+.top-hero-title-block figure {
+  width: 376.5px;
+}
+.top-hero-title-block h1 {
+  margin-left: auto;
+  width: fit-content;
+  letter-spacing: 0.2rem !important;
+}
+.top-gallery-block figure {
+  margin: 0 !important;
+}
+
+/*CONTACTセクション（フッター直前ウィジェット）*/
+#before_footer_widget {
+  margin: 0;
+}
+/*パンくず*/
+#breadcrumb {
+  background-color: #e7e7e7;
+}
 /*Swellのメディアクエリ*/
 @media (max-width: 600px) {
   .upper-header-imges figure img {

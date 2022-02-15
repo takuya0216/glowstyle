@@ -1,0 +1,12 @@
+/*TOPページのみのCSS*/
+@media (min-width: 960px) {
+  .l-header__logo {
+    display: none !important;
+  }
+  nav#gnav {
+    margin-left: 0;
+  }
+  header#header {
+    padding-top: 30px;
+  }
+}
