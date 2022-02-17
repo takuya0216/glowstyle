@@ -17,7 +17,27 @@ svg.icon_blog {
   width: 28.5px;
   height: 26.7px;
 }
-
+.l-content {
+  padding-top: 0;
+  margin-bottom: 0 !important;
+}
+.l-mainContent__inner > .post_content {
+  padding: 0;
+}
+/*固定ページタイトル*/
+.page-title {
+  position: absolute !important;
+  bottom: 0 !important;
+  font-size: 6.875rem !important;
+  font-weight: normal !important;
+  line-height: 0.9em !important;
+  transform: translatey(40%);
+  letter-spacing: 0.1em !important;
+}
+.page-hero-block {
+  margin-bottom: 0 !important;
+  padding-bottom: 130px !important;
+}
 /*Header上*/
 .upper-header-imges {
   padding-left: calc((100vw - var(--container_size, 0px)) / 2);
@@ -61,6 +81,42 @@ svg.icon_blog {
   margin: 0 !important;
 }
 
+/*ABOUTページ*/
+.about-profile-title {
+  font-size: 6.875rem !important;
+  font-weight: normal !important;
+  line-height: 0.9em !important;
+  letter-spacing: 0.1em !important;
+  margin: 0 !important;
+  transform: translatey(-95%);
+}
+/*MENUページ*/
+.menu-title-cp {
+  width: 520px;
+  height: 107px;
+  margin: 0 auto !important;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.menu-title-cp:first-of-type {
+  transform: translateY(-50%);
+}
+.menu-col-left {
+  border-top: 1px solid var(--color_main);
+}
+.menu-col-inner {
+  padding: 1.875rem 0;
+}
+.menu-col-wp:last-of-type {
+  margin-bottom: 150px !important;
+}
+.menu-col-wp:last-of-type > .menu-col-left {
+  border-bottom: 1px solid var(--color_main);
+}
+.menu-title {
+  margin-bottom: 1rem !important;
+}
 /*CONTACTセクション（フッター直前ウィジェット）*/
 #before_footer_widget {
   margin: 0;
@@ -69,6 +125,14 @@ svg.icon_blog {
 #breadcrumb {
   background-color: #e7e7e7;
 }
+
+/*コンテンツ幅以上*/
+@media (min-width: 1000px) {
+  .swell-block-fullWide__inner {
+    padding: 0;
+  }
+}
+
 /*Swellのメディアクエリ*/
 @media (max-width: 600px) {
   .upper-header-imges figure img {

@@ -18,6 +18,31 @@ body * {
   writing-mode: vertical-rl;
 }
 
+/*MENU*/
+p.menu-guide {
+  border-radius: 50%;
+  width: 96.25px;
+  height: 96.25px;
+  display: flex;
+  font-size: 0.875rem;
+  justify-content: center;
+  align-items: center;
+  white-space: nowrap;
+  font-weight: normal;
+  line-height: 1.3em;
+}
+p.menu-item-title {
+  border-radius: 8px;
+  width: 77px;
+  height: 24px;
+  font-size: 0.9375em;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  white-space: nowrap;
+  padding: 0;
+}
+
 /* 小さなデバイス  (スマホ, 768pxとそれ以下)*/
 @media (max-width: 768px) {
 }
