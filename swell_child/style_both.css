@@ -6,11 +6,17 @@
 
 body * {
   font-feature-settings: "palt";
+  font-family: fot-tsukumin-pr6n, "Noto Serif JP", "Hiragino Mincho ProN", serif;
 }
 
 /*改行禁止*/
 .nowrap {
   white-space: nowrap !important;
+}
+/*リストスタイルなし*/
+.nolist-style {
+  list-style: none !important;
+  padding-left: 0 !important;
 }
 /*ヘッダーアレンジ 縦書き*/
 .is-style-vertical-text {

@@ -1,9 +1,12 @@
 /*基本*/
 body {
-  letter-spacing: 0.1em;
+  letter-spacing: 0.15em;
 }
 a:hover {
   opacity: 0.7;
+}
+svg {
+  vertical-align: top;
 }
 /*全幅から左paddingをコンテンツサイズまで縮める*/
 .full-justify-left {
@@ -17,12 +20,31 @@ svg.icon_blog {
   width: 28.5px;
   height: 26.7px;
 }
+.view-more figure {
+  width: 76.5px !important;
+}
+.view-more {
+  --swl-mediatext--gap: 10px;
+}
 .l-content {
   padding-top: 0;
   margin-bottom: 0 !important;
 }
 .l-mainContent__inner > .post_content {
   padding: 0;
+}
+/*フォント*/
+.font-size-13 {
+  font-size: 0.8125rem !important;
+}
+.font-size-15 {
+  font-size: 0.9375rem !important;
+}
+.font-size-23 {
+  font-size: 1.4375rem !important;
+}
+.letter-spacing-1 {
+  letter-spacing: 0.1em;
 }
 /*固定ページタイトル*/
 .page-title {
@@ -52,6 +74,9 @@ svg.icon_blog {
 }
 
 /*Header*/
+header#header {
+  padding-top: 35px;
+}
 .l-header {
   box-shadow: 0 1px 2px rgb(0 0 0 / 12%);
 }
@@ -61,26 +86,56 @@ svg.icon_blog {
 .icon-instagram:before {
   color: #595757;
 }
+.c-gnav > .menu-item > a {
+  padding: 0 20px;
+}
+.c-gnav > .menu-item:first-of-type > a {
+  padding-left: 0;
+}
+nav#gnav {
+  color: #595757;
+}
 #gnav a:hover {
   opacity: 1;
 }
-
+.header-external-icon {
+  padding-bottom: 5px;
+}
 /*TOPページ*/
 .top-hero-title-block {
-  padding-top: 90px !important;
+  padding-top: 100px !important;
 }
 .top-hero-title-block figure {
   width: 376.5px;
 }
 .top-hero-title-block h1 {
-  margin-left: auto;
+  margin-left: calc(80px - var(--swl-mediatext--space));
   width: fit-content;
-  letter-spacing: 0.2rem !important;
+  line-height: 1.9em;
+  letter-spacing: 0.2em !important;
+  font-size: 2.25rem;
+}
+.top-hero-title-block h1 span {
+  letter-spacing: 0.28em !important;
 }
 .top-gallery-block figure {
   margin: 0 !important;
 }
-
+.top-section-title-jp {
+  font-size: 1.25rem !important;
+  border-bottom: 1px solid #c9b5a6 !important;
+  padding-bottom: 9px !important;
+  letter-spacing: 0.1em !important;
+}
+.top-section-title-en {
+  font-size: 6.875rem !important;
+  font-weight: 400 !important;
+  line-height: 1em !important;
+  letter-spacing: 0.1em !important;
+}
+.top-salon-contetnt-wp {
+  --swl-mediatext--gap: 0;
+}
 /*ABOUTページ*/
 .about-profile-title {
   font-size: 6.875rem !important;
@@ -95,24 +150,44 @@ svg.icon_blog {
   width: 520px;
   height: 107px;
   margin: 0 auto !important;
+  margin-bottom: 60px !important;
   display: flex;
   justify-content: center;
   align-items: center;
+  font-size: 2rem !important;
 }
 .menu-title-cp:first-of-type {
   transform: translateY(-50%);
+  margin-bottom: 0px !important;
 }
-.menu-col-left {
+.menu-col-left,
+.trmenu-col-left {
   border-top: 1px solid var(--color_main);
+  flex-basis: 70% !important;
 }
+.menu-col-right {
+  flex-basis: 30% !important;
+}
+
 .menu-col-inner {
   padding: 1.875rem 0;
 }
-.menu-col-wp:last-of-type {
-  margin-bottom: 150px !important;
+.trmenu-col-left {
+  padding: 2.1875rem 1.25rem;
+  margin-bottom: 0;
 }
-.menu-col-wp:last-of-type > .menu-col-left {
+.menu-col-left-inner-item1 {
+  padding-left: 1.25rem;
+}
+.wp-block-column.menu-col-left-inner-item2 {
+  margin-left: 3.4375rem !important;
+}
+.menu-col-wp:last-of-type > .menu-col-left,
+.trmenu-col-wp .wp-block-media-text__content > .trmenu-col-left:last-of-type {
   border-bottom: 1px solid var(--color_main);
+}
+.trmenu-col-wp {
+  grid-template-columns: auto 29.28% !important;
 }
 .menu-title {
   margin-bottom: 1rem !important;
@@ -121,11 +196,72 @@ svg.icon_blog {
 #before_footer_widget {
   margin: 0;
 }
+.footer-before-contact-wp {
+  width: 736px;
+  height: 208px;
+  margin: 0 auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-width: 2px !important;
+}
+.footer-before-contact-wp h2 {
+  font-size: 2.625rem;
+  letter-spacing: 0.1em !important;
+  margin: 0 !important;
+  padding: 0 25px 3px 25px !important;
+  border-bottom: 1px solid #000000 !important;
+}
+/*フッター*/
+div#custom_html-11 {
+  display: flex;
+  align-items: flex-end;
+  justify-content: end;
+  height: 100%;
+}
+.footer-right-external-icon {
+  width: fit-content;
+}
 /*パンくず*/
 #breadcrumb {
   background-color: #e7e7e7;
 }
 
+/*スマホ*/
+@media (max-width: 767.89px) {
+  .view-more {
+    display: flex;
+    flex-direction: row-reverse;
+  }
+  header#header {
+    padding-top: 5px;
+  }
+  .top-hero-title-block {
+    padding-top: 2.5em !important;
+  }
+  .top-hero-title-block figure {
+    width: 50vw;
+  }
+  .top-hero-title-block h1 {
+    margin: 0;
+    line-height: 1.9em;
+    letter-spacing: 0.2em !important;
+    font-size: 1.6rem;
+  }
+  .top-section-title-en {
+    font-size: 2.875rem !important;
+  }
+  .footer-before-contact-wp {
+    width: auto;
+    height: 158px;
+  }
+  div#custom_html-11 {
+    justify-content: center;
+  }
+  .wp-block-spacer.top-under-blog-section-spacer {
+    height: 0px !important;
+  }
+}
 /*コンテンツ幅以上*/
 @media (min-width: 1000px) {
   .swell-block-fullWide__inner {
