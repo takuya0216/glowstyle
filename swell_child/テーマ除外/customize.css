@@ -10,7 +10,10 @@ svg {
 }
 /*全幅から左paddingをコンテンツサイズまで縮める*/
 .full-justify-left {
-  padding-left: calc((100vw - var(--container_size, 0px)) / 2);
+  padding-left: calc((100vw - var(--container_size, 0px)) / 2) !important;
+}
+.full-justify-right {
+  padding-right: calc((100vw - var(--container_size, 0px)) / 2) !important;
 }
 svg.icon_instagram {
   width: 23.3px;
@@ -34,17 +37,38 @@ svg.icon_blog {
   padding: 0;
 }
 /*フォント*/
+.font-size-12 {
+  font-size: 0.75rem !important;
+}
 .font-size-13 {
   font-size: 0.8125rem !important;
 }
 .font-size-15 {
   font-size: 0.9375rem !important;
 }
+.font-size-21 {
+  font-size: 1.3125rem !important;
+}
 .font-size-23 {
   font-size: 1.4375rem !important;
 }
 .letter-spacing-1 {
   letter-spacing: 0.1em;
+}
+.letter-spacing-15 {
+  letter-spacing: 0.15em;
+}
+.line-height-1 {
+  line-height: 1em;
+}
+.line-height-15 {
+  line-height: 1.5em;
+}
+.line-height-19 {
+  line-height: 1.9em;
+}
+.link-color-white a {
+  color: #fff !important;
 }
 /*固定ページタイトル*/
 .page-title {
@@ -137,13 +161,100 @@ nav#gnav {
   --swl-mediatext--gap: 0;
 }
 /*ABOUTページ*/
+.about-all-wp {
+  padding-bottom: 11.25rem !important;
+}
+.about-col-wp {
+  padding: 0 !important;
+  padding-left: calc((100vw - var(--container_size, 0px)) / 2) !important;
+  margin-right: calc((100vw - var(--container_size, 0px)) / 2);
+  height: 468px;
+  position: relative;
+}
+.wp-block-column.about-col-item1 {
+  position: relative;
+}
+.wp-block-column.about-col-item1 .wp-block-image {
+  margin-bottom: 0;
+  position: absolute;
+  width: fit-content;
+}
+.wp-block-column.about-col-item1 :first-child.wp-block-image {
+  top: -45px;
+  left: 0;
+  z-index: 1;
+}
+.wp-block-column.about-col-item1 :last-child.wp-block-image {
+  bottom: -45px;
+  right: 0;
+}
+h3.about-title {
+  width: 245px;
+  height: 50px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transform: translateY(-50%);
+  font-weight: 300;
+}
+.wp-block-column.about-col-item2 {
+  padding-right: 75px;
+  margin-left: 75px !important;
+}
+
 .about-profile-title {
   font-size: 6.875rem !important;
   font-weight: normal !important;
-  line-height: 0.9em !important;
-  letter-spacing: 0.1em !important;
-  margin: 0 !important;
-  transform: translatey(-95%);
+  margin-top: -4rem !important;
+  margin-bottom: 4rem !important;
+}
+.about-profile-item1 .wp-block-media-text__content {
+  padding-top: 0;
+  margin-top: -30px;
+}
+.about-profile-item1 {
+  padding-top: 2rem;
+  gap: 4rem;
+  margin-bottom: 0;
+}
+.about-profile-item2 {
+  gap: 4rem;
+  margin-top: -6.3rem;
+}
+.about-profile-kf-item1 .wp-block-image figure {
+  margin: 0;
+}
+h4.about-profile-kf-item2-title2 {
+  margin-top: 3.125rem;
+  margin-bottom: 1.5625rem;
+  border-bottom: 1px solid #fff;
+}
+h4.about-profile-kf-item2-title2::after {
+  content: "" !important;
+  display: block;
+  width: 69%;
+  height: 1.5px;
+  background-color: #fff;
+  position: absolute;
+  right: 0;
+  bottom: 5px;
+}
+.about-profile-kf-item2-title1 {
+  width: fit-content;
+}
+.about-profile-kf-item2-title1 :last-child.wp-block-column {
+  margin-left: 1em !important;
+}
+.wp-block-columns.about-col-wp::after {
+  content: "";
+  width: 243px;
+  height: 367.8px;
+  background: url(https://glowstyle-salon.com/wp-content/uploads/2022/03/g-logo.svg)
+    no-repeat;
+  background-size: contain;
+  position: absolute;
+  right: -75px;
+  top: -102px;
 }
 /*MENUページ*/
 .menu-title-cp {
@@ -192,6 +303,7 @@ nav#gnav {
 .menu-title {
   margin-bottom: 1rem !important;
 }
+
 /*CONTACTセクション（フッター直前ウィジェット）*/
 #before_footer_widget {
   margin: 0;
@@ -261,6 +373,62 @@ div#custom_html-11 {
   .wp-block-spacer.top-under-blog-section-spacer {
     height: 0px !important;
   }
+  /*about*/
+  .about-col-wp {
+    padding: var(--swl-box_padding) !important;
+    margin-right: 0px;
+    flex-wrap: wrap-reverse;
+    height: auto;
+    padding-top: 0em !important;
+    padding-bottom: 3em !important;
+  }
+  .wp-block-column.about-col-item2 {
+    padding-right: 0;
+    margin-left: 0 !important;
+    position: initial;
+  }
+  .wp-block-column.about-col-item1 .wp-block-image {
+    position: initial;
+  }
+  .page-hero-block {
+    padding-bottom: inherit !important;
+  }
+
+  .wp-block-columns.about-col-wp::after {
+    width: 121px;
+    height: 183.5px;
+    right: -75px;
+    top: -40px;
+  }
+  .about-all-wp {
+    padding-top: 6em !important;
+    padding-bottom: 6em !important;
+  }
+  h3.about-title {
+    width: 230px;
+    transform: translateY(-90%);
+    margin-bottom: 0 !important;
+  }
+  div.wp-block-column.about-col-item1 {
+    display: flex;
+    margin-top: 2em !important;
+  }
+  .about-profile-title {
+    font-size: 4.875rem !important;
+    margin-top: -2rem !important;
+    margin-bottom: 2rem !important;
+  }
+  .about-profile-item1 {
+    padding-top: 0;
+    gap: 4rem;
+    margin-bottom: 2rem;
+  }
+  .about-profile-item2 {
+    gap: 0;
+  }
+  h3.about-profile-header {
+    margin-bottom: 1rem !important;
+  }
 }
 /*コンテンツ幅以上*/
 @media (min-width: 1000px) {
@@ -276,5 +444,25 @@ div#custom_html-11 {
   }
   .upper-header-imges figure {
     width: auto !important;
+  }
+}
+@media (max-width: 959px) {
+  .page-hero-block .swell-block-fullWide__inner.l-article {
+    --swl-fw_inner_pad: var(--swl-pad_container, 4vw);
+    padding: 0;
+  }
+  .page-title {
+    font-size: 4.875rem !important;
+  }
+}
+/*その他*/
+@media (max-width: 1150px) {
+  .wp-block-columns.about-col-wp::after {
+    right: 0;
+  }
+}
+@media (max-width: 1050px) {
+  .about-profile-item2 {
+    margin-top: 0;
   }
 }
