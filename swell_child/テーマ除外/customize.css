@@ -271,6 +271,7 @@ h4.about-profile-kf-item2-title2::after {
   transform: translateY(-50%);
   margin-bottom: 0px !important;
 }
+
 .menu-col-left,
 .trmenu-col-left {
   border-top: 1px solid var(--color_main);
@@ -293,15 +294,18 @@ h4.about-profile-kf-item2-title2::after {
 .wp-block-column.menu-col-left-inner-item2 {
   margin-left: 3.4375rem !important;
 }
+
 .menu-col-wp:last-of-type > .menu-col-left,
 .trmenu-col-wp .wp-block-media-text__content > .trmenu-col-left:last-of-type {
   border-bottom: 1px solid var(--color_main);
 }
 .trmenu-col-wp {
-  grid-template-columns: auto 29.28% !important;
+  grid-template-columns: auto 25.8% !important;
+  column-gap: 3.67rem;
 }
 .menu-title {
   margin-bottom: 1rem !important;
+  letter-spacing: 0.3rem !important;
 }
 
 /*CONTACTセクション（フッター直前ウィジェット）*/
@@ -333,6 +337,9 @@ div#custom_html-11 {
 }
 .footer-right-external-icon {
   width: fit-content;
+}
+.footer-left-pr {
+  padding: 0.5rem !important;
 }
 /*パンくず*/
 #breadcrumb {
@@ -391,7 +398,7 @@ div#custom_html-11 {
     position: initial;
   }
   .page-hero-block {
-    padding-bottom: inherit !important;
+    padding-bottom: 100px !important;
   }
 
   .wp-block-columns.about-col-wp::after {
@@ -401,7 +408,7 @@ div#custom_html-11 {
     top: -40px;
   }
   .about-all-wp {
-    padding-top: 6em !important;
+    padding-top: 0em !important;
     padding-bottom: 6em !important;
   }
   h3.about-title {
@@ -429,7 +436,56 @@ div#custom_html-11 {
   h3.about-profile-header {
     margin-bottom: 1rem !important;
   }
+  /*Menu*/
+  .menu-title-cp {
+    width: auto;
+    height: 70px;
+    font-size: 1.6rem !important;
+    margin-bottom: 0 !important;
+    transform: translateY(-50%);
+  }
+  .menu-col-inner {
+    padding: 1.5rem 1rem;
+  }
+  .menu-col-left-inner-item1 {
+    padding-left: 0;
+  }
+  p.menu-guide {
+    width: 44%;
+    height: 45.25px;
+    margin: 0 auto;
+  }
+  .wp-block-columns.menu-col-wp {
+    padding-bottom: 2.2em;
+  }
+  .menu-col-right.menu-col-inner {
+    margin-top: 0 !important;
+    padding-top: 0;
+  }
+  .menu-col-wp:last-of-type > .menu-col-left {
+    border-bottom: none;
+  }
+  .menu-col-wp:last-of-type > .menu-col-right {
+    border-bottom: 1px solid var(--color_main);
+  }
+  .menu-bs-wp {
+    margin-bottom: 3em !important;
+  }
+  p.menu-item-title {
+    width: 64px;
+  }
+  .wp-block-column.menu-col-left-inner-item2 {
+    margin-left: 0 !important;
+  }
+  .wp-block-columns.menu-col-spec > .wp-block-column {
+    flex-basis: fit-content !important;
+    flex-wrap: nowrap;
+  }
+  .wp-block-columns.menu-col-spec {
+    flex-wrap: nowrap !important;
+  }
 }
+/*スマホEND*/
 /*コンテンツ幅以上*/
 @media (min-width: 1000px) {
   .swell-block-fullWide__inner {
@@ -438,12 +494,18 @@ div#custom_html-11 {
 }
 
 /*Swellのメディアクエリ*/
-@media (max-width: 600px) {
+@media (max-width: 599px) {
   .upper-header-imges figure img {
     width: calc(100vw / 5) !important;
   }
   .upper-header-imges figure {
     width: auto !important;
+  }
+  .trmenu-col-wp figure.wp-block-media-text__media {
+    grid-row: 2 !important;
+  }
+  .trmenu-col-wp .wp-block-media-text__content {
+    grid-row: 1 !important;
   }
 }
 @media (max-width: 959px) {
