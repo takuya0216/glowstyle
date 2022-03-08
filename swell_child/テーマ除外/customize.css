@@ -307,6 +307,12 @@ h4.about-profile-kf-item2-title2::after {
   margin-bottom: 1rem !important;
   letter-spacing: 0.3rem !important;
 }
+.menu-col-right.menu-col-inner .wp-block-image figure {
+  width: 258px;
+}
+.trmenu-col-wp figure {
+  width: 258px !important;
+}
 
 /*CONTACTセクション（フッター直前ウィジェット）*/
 #before_footer_widget {
@@ -346,8 +352,117 @@ div#custom_html-11 {
   background-color: #e7e7e7;
 }
 
+/* 中間のデバイス(タブレット, 744以上992px以下)*/
+@media (min-width: 744px) and (max-width: 991.98px) {
+  /*TOP*/
+  .top-hero-title-block figure {
+    width: 328.5px;
+  }
+  .top-hero-title-block h1 {
+    letter-spacing: 0.1em !important;
+    font-size: 1.675rem;
+  }
+  .top-hero-title-block {
+    padding-top: 50px !important;
+    padding-bottom: 30px !important;
+  }
+  .top-section-title-en {
+    font-size: 5.875rem !important;
+    font-weight: 400 !important;
+    line-height: 1em !important;
+    letter-spacing: 0.1em !important;
+  }
+  /*about*/
+  .about-col-wp {
+    padding: var(--swl-box_padding) !important;
+    margin-right: 0px;
+    flex-wrap: wrap-reverse;
+    height: auto;
+    padding-top: 0em !important;
+    padding-bottom: 3em !important;
+    flex-flow: column-reverse;
+  }
+  .wp-block-column.about-col-item2 {
+    padding-right: 0;
+    margin-left: 0 !important;
+    position: initial;
+  }
+  .wp-block-column.about-col-item1 .wp-block-image {
+    position: initial;
+  }
+  div.wp-block-column.about-col-item1 {
+    display: flex;
+    margin-top: 2em !important;
+  }
+}
+/*タブレット・スマホ共通*/
+@media (max-width: 991.98px) {
+  /*Menu*/
+  .menu-title-cp {
+    width: auto;
+    height: 70px;
+    font-size: 1.6rem !important;
+    margin-bottom: 0 !important;
+    transform: translateY(-50%);
+  }
+  .menu-col-inner {
+    padding: 1.5rem 1rem;
+  }
+  .menu-col-left-inner-item1 {
+    padding-left: 0;
+  }
+  p.menu-guide {
+    width: 44%;
+    height: 45.25px;
+    margin: 0 auto;
+  }
+  .wp-block-columns.menu-col-wp {
+    padding-bottom: 2.2em;
+    flex-flow: column;
+  }
+  .wp-block-columns.menu-col-left-inner {
+    flex-flow: column;
+  }
+  .menu-col-right.menu-col-inner {
+    margin-top: 0 !important;
+    padding-top: 0;
+  }
+  .menu-col-wp:last-of-type > .menu-col-left {
+    border-bottom: none;
+  }
+  .menu-col-wp:last-of-type > .menu-col-right {
+    border-bottom: 1px solid var(--color_main);
+  }
+  .menu-bs-wp {
+    margin-bottom: 3em !important;
+  }
+  p.menu-item-title {
+    width: 64px;
+  }
+  .wp-block-column.menu-col-left-inner-item2 {
+    margin-left: 0 !important;
+    margin-top: var(--wp-column-mt);
+  }
+  .wp-block-columns.menu-col-spec {
+    flex-wrap: nowrap !important;
+  }
+  .wp-block-columns.menu-col-spec > .wp-block-column {
+    flex-basis: fit-content !important;
+  }
+  .trmenu-col-wp {
+    grid-template-columns: 100% !important;
+  }
+
+  .trmenu-col-wp figure.wp-block-media-text__media {
+    grid-row: 2 !important;
+    grid-column: 1 !important;
+  }
+  .trmenu-col-wp .wp-block-media-text__content {
+    grid-row: 1 !important;
+  }
+}
 /*スマホ*/
-@media (max-width: 767.89px) {
+@media (max-width: 743.98px) {
   .view-more {
     display: flex;
     flex-direction: row-reverse;
@@ -388,6 +503,7 @@ div#custom_html-11 {
     height: auto;
     padding-top: 0em !important;
     padding-bottom: 3em !important;
+    flex-flow: column-reverse;
   }
   .wp-block-column.about-col-item2 {
     padding-right: 0;
@@ -436,56 +552,18 @@ div#custom_html-11 {
   h3.about-profile-header {
     margin-bottom: 1rem !important;
   }
-  /*Menu*/
-  .menu-title-cp {
-    width: auto;
-    height: 70px;
-    font-size: 1.6rem !important;
-    margin-bottom: 0 !important;
-    transform: translateY(-50%);
+  /*menu*/
+  .menu-col-right.menu-col-inner .wp-block-image figure {
+    width: 258px;
+    float: left;
+    margin-left: 0;
   }
-  .menu-col-inner {
-    padding: 1.5rem 1rem;
-  }
-  .menu-col-left-inner-item1 {
-    padding-left: 0;
-  }
-  p.menu-guide {
-    width: 44%;
-    height: 45.25px;
-    margin: 0 auto;
-  }
-  .wp-block-columns.menu-col-wp {
-    padding-bottom: 2.2em;
-  }
-  .menu-col-right.menu-col-inner {
-    margin-top: 0 !important;
-    padding-top: 0;
-  }
-  .menu-col-wp:last-of-type > .menu-col-left {
-    border-bottom: none;
-  }
-  .menu-col-wp:last-of-type > .menu-col-right {
-    border-bottom: 1px solid var(--color_main);
-  }
-  .menu-bs-wp {
-    margin-bottom: 3em !important;
-  }
-  p.menu-item-title {
-    width: 64px;
-  }
-  .wp-block-column.menu-col-left-inner-item2 {
-    margin-left: 0 !important;
-  }
-  .wp-block-columns.menu-col-spec > .wp-block-column {
-    flex-basis: fit-content !important;
-    flex-wrap: nowrap;
-  }
-  .wp-block-columns.menu-col-spec {
-    flex-wrap: nowrap !important;
+  .trmenu-col-wp figure.wp-block-media-text__media {
+    padding: var(--swl-mediatext--space) !important;
   }
 }
 /*スマホEND*/
+
 /*コンテンツ幅以上*/
 @media (min-width: 1000px) {
   .swell-block-fullWide__inner {
@@ -500,12 +578,6 @@ div#custom_html-11 {
   }
   .upper-header-imges figure {
     width: auto !important;
-  }
-  .trmenu-col-wp figure.wp-block-media-text__media {
-    grid-row: 2 !important;
-  }
-  .trmenu-col-wp .wp-block-media-text__content {
-    grid-row: 1 !important;
   }
 }
 @media (max-width: 959px) {
