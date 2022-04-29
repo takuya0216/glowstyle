@@ -13,15 +13,24 @@ body * {
 .nowrap {
   white-space: nowrap !important;
 }
+
 /*リストスタイルなし*/
 .nolist-style {
   list-style: none !important;
   padding-left: 0 !important;
 }
+
 /*ヘッダーアレンジ 縦書き*/
 .is-style-vertical-text {
   -ms-writing-mode: tb-rl;
   writing-mode: vertical-rl;
+}
+
+/*セールスタイル*/
+.is-style-sale-attention {
+  border: 6px double !important;
+  padding: 0.1em !important;
+  width: 85%;
 }
 
 /*MENU*/
@@ -37,11 +46,12 @@ p.menu-guide {
   font-weight: normal;
   line-height: 1.3em;
 }
+
 p.menu-item-title {
   border-radius: 8px;
   width: 77px;
   height: 24px;
-  font-size: 0.9375em;
+  font-size: 0.9375rem;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -50,19 +60,19 @@ p.menu-item-title {
 }
 
 /* 小さなデバイス  (スマホ, 768pxとそれ以下)*/
-@media (max-width: 768px) {
+@media (max-width: 743.98px) {
+  .is-style-sale-attention {
+    width: 85vw;
+  }
 }
 
 /* 中間のデバイス(タブレット, 768以上992px以下)*/
-@media (min-width: 768.01px) and (max-width: 992px) {
-}
+@media (min-width: 768.01px) and (max-width: 992px) {}
 
 /*Swellのメディアクエリ*/
-@media (min-width: 782px) {
-}
+@media (min-width: 782px) {}
 
-@media (min-width: 600px) and (max-width: 781px) {
-}
+@media (min-width: 600px) and (max-width: 781px) {}
 
 /* 600pxより小さいと--swl-fz--root:3.6vwで、ルートの文字サイズがレスポンシブになってる。
  * emやrem指定のフォントが画面サイズによってスケールしちゃう。

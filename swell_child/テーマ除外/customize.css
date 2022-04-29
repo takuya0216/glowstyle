@@ -2,74 +2,113 @@
 body {
   letter-spacing: 0.15em;
 }
+
 a:hover {
   opacity: 0.7;
 }
+
 svg {
   vertical-align: top;
 }
+
 /*全幅から左paddingをコンテンツサイズまで縮める*/
 .full-justify-left {
   padding-left: calc((100vw - var(--container_size, 0px)) / 2) !important;
 }
+
 .full-justify-right {
   padding-right: calc((100vw - var(--container_size, 0px)) / 2) !important;
 }
+
 svg.icon_instagram {
   width: 23.3px;
   height: 23.3px;
 }
+
 svg.icon_blog {
   width: 28.5px;
   height: 26.7px;
 }
+
 .view-more figure {
   width: 76.5px !important;
 }
+
 .view-more {
   --swl-mediatext--gap: 10px;
 }
+
+.view-more-blog {
+  justify-content: right;
+}
+
 .l-content {
   padding-top: 0;
   margin-bottom: 0 !important;
 }
-.l-mainContent__inner > .post_content {
+
+.l-mainContent__inner>.post_content {
   padding: 0;
 }
+
 /*フォント*/
 .font-size-12 {
   font-size: 0.75rem !important;
 }
+
 .font-size-13 {
   font-size: 0.8125rem !important;
 }
+
 .font-size-15 {
   font-size: 0.9375rem !important;
 }
+
 .font-size-21 {
   font-size: 1.3125rem !important;
 }
+
+.font-size-22 {
+  font-size: 1.375rem !important;
+}
+
 .font-size-23 {
   font-size: 1.4375rem !important;
 }
+
+.font-size-46 {
+  font-size: 2.875rem !important;
+}
+
 .letter-spacing-1 {
   letter-spacing: 0.1em;
 }
+
 .letter-spacing-15 {
   letter-spacing: 0.15em;
 }
+
 .line-height-1 {
   line-height: 1em;
 }
+
 .line-height-15 {
   line-height: 1.5em;
 }
+
 .line-height-19 {
   line-height: 1.9em;
 }
+
 .link-color-white a {
   color: #fff !important;
 }
+
+.z-index-1 {
+  position: relative;
+  z-index: 1;
+}
+
 /*固定ページタイトル*/
 .page-title {
   position: absolute !important;
@@ -80,10 +119,12 @@ svg.icon_blog {
   transform: translatey(40%);
   letter-spacing: 0.1em !important;
 }
+
 .page-hero-block {
   margin-bottom: 0 !important;
   padding-bottom: 130px !important;
 }
+
 /*Header上*/
 .upper-header-imges {
   padding-left: calc((100vw - var(--container_size, 0px)) / 2);
@@ -101,37 +142,54 @@ svg.icon_blog {
 header#header {
   padding-top: 35px;
 }
-.l-header {
-  box-shadow: 0 1px 2px rgb(0 0 0 / 12%);
-}
+
+.l-header {}
+
 .l-header__inner .cls-1 {
   fill: #595757;
 }
+
 .icon-instagram:before {
   color: #595757;
 }
-.c-gnav > .menu-item > a {
-  padding: 0 20px;
+
+.c-gnav>.menu-item>a {
+  padding: 0 20px 20px;
+  justify-content: flex-end;
+  align-items: flex-end;
 }
-.c-gnav > .menu-item:first-of-type > a {
+
+.c-gnav>.menu-item:first-of-type>a {
   padding-left: 0;
 }
+
 nav#gnav {
   color: #595757;
 }
+
 #gnav a:hover {
   opacity: 1;
 }
+
 .header-external-icon {
   padding-bottom: 5px;
 }
+
+.w-header {
+  align-items: flex-end;
+  justify-content: flex-end;
+  padding-bottom: 12px;
+}
+
 /*TOPページ*/
 .top-hero-title-block {
   padding-top: 100px !important;
 }
+
 .top-hero-title-block figure {
   width: 376.5px;
 }
+
 .top-hero-title-block h1 {
   margin-left: calc(80px - var(--swl-mediatext--space));
   width: fit-content;
@@ -139,31 +197,73 @@ nav#gnav {
   letter-spacing: 0.2em !important;
   font-size: 2.25rem;
 }
+
 .top-hero-title-block h1 span {
   letter-spacing: 0.28em !important;
 }
+
 .top-gallery-block figure {
   margin: 0 !important;
 }
+
 .top-section-title-jp {
   font-size: 1.25rem !important;
   border-bottom: 1px solid #c9b5a6 !important;
   padding-bottom: 9px !important;
   letter-spacing: 0.1em !important;
 }
+
 .top-section-title-en {
   font-size: 6.875rem !important;
   font-weight: 400 !important;
   line-height: 1em !important;
   letter-spacing: 0.1em !important;
 }
+
 .top-salon-contetnt-wp {
   --swl-mediatext--gap: 0;
 }
+
+.top-hero::before {
+  content: "";
+  width: 243px;
+  height: 367.8px;
+  background: url(https://glowstyle-salon.com/wp-content/uploads/2022/04/g-logo2.svg) no-repeat;
+  background-size: contain;
+  position: absolute;
+  bottom: -150px;
+  left: calc((100vw - var(--container_size, 0px)) / 2 + 74px) !important;
+}
+
+.top-section-blog .wp-block-media-text__content {
+  width: fit-content;
+}
+
+.top-blog-title::after {
+  content: "";
+  background: #e2d3c4;
+  width: 780px;
+  height: 477px;
+  position: absolute;
+  z-index: -1;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+.about-all-wp::before {
+  content: "";
+  background: #e7e7e7;
+  width: 100vw;
+  height: 50%;
+  position: absolute;
+  top: -1px;
+}
+
 /*ABOUTページ*/
 .about-all-wp {
-  padding-bottom: 11.25rem !important;
+  padding-bottom: 6.25rem !important;
 }
+
 .about-col-wp {
   padding: 0 !important;
   padding-left: calc((100vw - var(--container_size, 0px)) / 2) !important;
@@ -171,23 +271,28 @@ nav#gnav {
   height: 468px;
   position: relative;
 }
+
 .wp-block-column.about-col-item1 {
   position: relative;
 }
+
 .wp-block-column.about-col-item1 .wp-block-image {
   margin-bottom: 0;
   position: absolute;
   width: fit-content;
 }
+
 .wp-block-column.about-col-item1 :first-child.wp-block-image {
   top: -45px;
   left: 0;
   z-index: 1;
 }
+
 .wp-block-column.about-col-item1 :last-child.wp-block-image {
   bottom: -45px;
   right: 0;
 }
+
 h3.about-title {
   width: 245px;
   height: 50px;
@@ -197,17 +302,25 @@ h3.about-title {
   transform: translateY(-50%);
   font-weight: 300;
 }
+
 .wp-block-column.about-col-item2 {
-  padding-right: 75px;
-  margin-left: 75px !important;
+  padding-right: 68px;
+  margin-left: 70px !important;
+  z-index: 1;
 }
 
 .about-profile-title {
   font-size: 6.875rem !important;
   font-weight: normal !important;
-  margin-top: -4rem !important;
-  margin-bottom: 4rem !important;
+  margin-bottom: 3.8rem !important;
 }
+
+.about-profile-col-right {
+  transform: translateY(60px);
+  z-index: 1;
+}
+
+/*
 .about-profile-item1 .wp-block-media-text__content {
   padding-top: 0;
   margin-top: -30px;
@@ -221,14 +334,17 @@ h3.about-title {
   gap: 4rem;
   margin-top: -6.3rem;
 }
+*/
 .about-profile-kf-item1 .wp-block-image figure {
   margin: 0;
 }
+
 h4.about-profile-kf-item2-title2 {
   margin-top: 3.125rem;
   margin-bottom: 1.5625rem;
   border-bottom: 1px solid #fff;
 }
+
 h4.about-profile-kf-item2-title2::after {
   content: "" !important;
   display: block;
@@ -239,26 +355,29 @@ h4.about-profile-kf-item2-title2::after {
   right: 0;
   bottom: 5px;
 }
+
 .about-profile-kf-item2-title1 {
   width: fit-content;
 }
+
 .about-profile-kf-item2-title1 :last-child.wp-block-column {
   margin-left: 1em !important;
 }
+
 .wp-block-columns.about-col-wp::after {
   content: "";
   width: 243px;
   height: 367.8px;
-  background: url(https://glowstyle-salon.com/wp-content/uploads/2022/03/g-logo.svg)
-    no-repeat;
+  background: url(https://glowstyle-salon.com/wp-content/uploads/2022/04/g-logo2.svg) no-repeat;
   background-size: contain;
   position: absolute;
   right: -75px;
   top: -102px;
 }
+
 /*MENUページ*/
 .menu-title-cp {
-  width: 520px;
+  width: 570px;
   height: 107px;
   margin: 0 auto !important;
   margin-bottom: 60px !important;
@@ -267,6 +386,7 @@ h4.about-profile-kf-item2-title2::after {
   align-items: center;
   font-size: 2rem !important;
 }
+
 .menu-title-cp:first-of-type {
   transform: translateY(-50%);
   margin-bottom: 0px !important;
@@ -275,49 +395,77 @@ h4.about-profile-kf-item2-title2::after {
 .menu-col-left,
 .trmenu-col-left {
   border-top: 1px solid var(--color_main);
-  flex-basis: 70% !important;
+
 }
+
 .menu-col-right {
-  flex-basis: 30% !important;
+  margin-left: 0 !important;
 }
 
 .menu-col-inner {
   padding: 1.875rem 0;
 }
+
 .trmenu-col-left {
   padding: 2.1875rem 1.25rem;
   margin-bottom: 0;
 }
+
 .menu-col-left-inner-item1 {
   padding-left: 1.25rem;
 }
+
 .wp-block-column.menu-col-left-inner-item2 {
-  margin-left: 3.4375rem !important;
+  /*margin-left: 3.4375rem !important;*/
 }
 
-.menu-col-wp:last-of-type > .menu-col-left,
-.trmenu-col-wp .wp-block-media-text__content > .trmenu-col-left:last-of-type {
+.menu-col-wp:last-of-type>.menu-col-left,
+.trmenu-col-wp .wp-block-media-text__content>.trmenu-col-left:last-of-type {
   border-bottom: 1px solid var(--color_main);
 }
+
 .trmenu-col-wp {
   grid-template-columns: auto 25.8% !important;
   column-gap: 3.67rem;
 }
+
 .menu-title {
   margin-bottom: 1rem !important;
   letter-spacing: 0.3rem !important;
 }
+
 .menu-col-right.menu-col-inner .wp-block-image figure {
   width: 258px;
 }
+
 .trmenu-col-wp figure {
   width: 258px !important;
+}
+
+/*Laraupページ*/
+.laraup-cal-left-title {
+  font-size: 2.875rem !important;
+}
+
+.laraup-col-right {
+  transform: translateX(70px);
+}
+
+.laraup-gallery-block {
+  margin-bottom: 140px !important;
+}
+
+figure.laraup-bana {
+  transform: translateY(-5px);
+  position: relative;
+  padding-bottom: 164px;
 }
 
 /*CONTACTセクション（フッター直前ウィジェット）*/
 #before_footer_widget {
   margin: 0;
 }
+
 .footer-before-contact-wp {
   width: 736px;
   height: 208px;
@@ -327,6 +475,7 @@ h4.about-profile-kf-item2-title2::after {
   align-items: center;
   border-width: 2px !important;
 }
+
 .footer-before-contact-wp h2 {
   font-size: 2.625rem;
   letter-spacing: 0.1em !important;
@@ -334,6 +483,7 @@ h4.about-profile-kf-item2-title2::after {
   padding: 0 25px 3px 25px !important;
   border-bottom: 1px solid #000000 !important;
 }
+
 /*フッター*/
 div#custom_html-11 {
   display: flex;
@@ -341,12 +491,15 @@ div#custom_html-11 {
   justify-content: end;
   height: 100%;
 }
+
 .footer-right-external-icon {
   width: fit-content;
 }
+
 .footer-left-pr {
   padding: 0.5rem !important;
 }
+
 /*パンくず*/
 #breadcrumb {
   background-color: #e7e7e7;
@@ -354,24 +507,29 @@ div#custom_html-11 {
 
 /* 中間のデバイス(タブレット, 744以上992px以下)*/
 @media (min-width: 744px) and (max-width: 991.98px) {
+
   /*TOP*/
   .top-hero-title-block figure {
     width: 328.5px;
   }
+
   .top-hero-title-block h1 {
     letter-spacing: 0.1em !important;
     font-size: 1.675rem;
   }
+
   .top-hero-title-block {
     padding-top: 50px !important;
     padding-bottom: 30px !important;
   }
+
   .top-section-title-en {
     font-size: 5.875rem !important;
     font-weight: 400 !important;
     line-height: 1em !important;
     letter-spacing: 0.1em !important;
   }
+
   /*about*/
   .about-col-wp {
     padding: var(--swl-box_padding) !important;
@@ -382,21 +540,26 @@ div#custom_html-11 {
     padding-bottom: 3em !important;
     flex-flow: column-reverse;
   }
+
   .wp-block-column.about-col-item2 {
     padding-right: 0;
     margin-left: 0 !important;
     position: initial;
   }
+
   .wp-block-column.about-col-item1 .wp-block-image {
     position: initial;
   }
+
   div.wp-block-column.about-col-item1 {
     display: flex;
     margin-top: 2em !important;
   }
 }
+
 /*タブレット・スマホ共通*/
 @media (max-width: 991.98px) {
+
   /*Menu*/
   .menu-title-cp {
     width: auto;
@@ -405,50 +568,55 @@ div#custom_html-11 {
     margin-bottom: 0 !important;
     transform: translateY(-50%);
   }
+
   .menu-col-inner {
-    padding: 1.5rem 1rem;
+    padding: 2.5rem 1rem;
   }
+
   .menu-col-left-inner-item1 {
     padding-left: 0;
   }
+
   p.menu-guide {
     width: 44%;
     height: 45.25px;
     margin: 0 auto;
   }
+
   .wp-block-columns.menu-col-wp {
-    padding-bottom: 2.2em;
     flex-flow: column;
   }
+
   .wp-block-columns.menu-col-left-inner {
     flex-flow: column;
   }
+
   .menu-col-right.menu-col-inner {
     margin-top: 0 !important;
     padding-top: 0;
   }
-  .menu-col-wp:last-of-type > .menu-col-left {
+
+  .menu-col-wp:last-of-type>.menu-col-left {
     border-bottom: none;
   }
-  .menu-col-wp:last-of-type > .menu-col-right {
+
+  .menu-col-wp:last-of-type>.menu-col-right {
     border-bottom: 1px solid var(--color_main);
   }
-  .menu-bs-wp {
-    margin-bottom: 3em !important;
-  }
+
   p.menu-item-title {
     width: 64px;
   }
+
   .wp-block-column.menu-col-left-inner-item2 {
     margin-left: 0 !important;
     margin-top: var(--wp-column-mt);
   }
-  .wp-block-columns.menu-col-spec {
-    flex-wrap: nowrap !important;
-  }
-  .wp-block-columns.menu-col-spec > .wp-block-column {
+
+  .wp-block-columns.menu-col-spec>.wp-block-column {
     flex-basis: fit-content !important;
   }
+
   .trmenu-col-wp {
     grid-template-columns: 100% !important;
   }
@@ -457,44 +625,70 @@ div#custom_html-11 {
     grid-row: 2 !important;
     grid-column: 1 !important;
   }
+
   .trmenu-col-wp .wp-block-media-text__content {
     grid-row: 1 !important;
   }
 }
+
 /*スマホ*/
 @media (max-width: 743.98px) {
   .view-more {
     display: flex;
     flex-direction: row-reverse;
   }
+
   header#header {
     padding-top: 5px;
   }
+
   .top-hero-title-block {
     padding-top: 2.5em !important;
   }
+
   .top-hero-title-block figure {
     width: 50vw;
   }
+
   .top-hero-title-block h1 {
     margin: 0;
     line-height: 1.9em;
     letter-spacing: 0.2em !important;
     font-size: 1.6rem;
   }
+
+  .top-hero::before {
+    width: 20vw;
+    height: 20vh;
+    bottom: -9vh;
+    left: calc(var(--swl-pad_container, 4vw)) !important;
+  }
+
   .top-section-title-en {
     font-size: 2.875rem !important;
   }
+
   .footer-before-contact-wp {
     width: auto;
     height: 158px;
   }
+
+  .top-blog-title::after {
+    width: 65vw;
+    height: 100vh;
+    left: 50%;
+    top: 50%;
+    transform: translateX(-50%);
+  }
+
   div#custom_html-11 {
     justify-content: center;
   }
+
   .wp-block-spacer.top-under-blog-section-spacer {
     height: 0px !important;
   }
+
   /*about*/
   .about-col-wp {
     padding: var(--swl-box_padding) !important;
@@ -505,16 +699,19 @@ div#custom_html-11 {
     padding-bottom: 3em !important;
     flex-flow: column-reverse;
   }
+
   .wp-block-column.about-col-item2 {
     padding-right: 0;
     margin-left: 0 !important;
     position: initial;
   }
+
   .wp-block-column.about-col-item1 .wp-block-image {
     position: initial;
   }
+
   .page-hero-block {
-    padding-bottom: 100px !important;
+    padding-bottom: 90px !important;
   }
 
   .wp-block-columns.about-col-wp::after {
@@ -523,45 +720,95 @@ div#custom_html-11 {
     right: -75px;
     top: -40px;
   }
+
   .about-all-wp {
     padding-top: 0em !important;
-    padding-bottom: 6em !important;
+    padding-bottom: 1em !important;
   }
+
   h3.about-title {
     width: 230px;
     transform: translateY(-90%);
     margin-bottom: 0 !important;
   }
+
   div.wp-block-column.about-col-item1 {
     display: flex;
     margin-top: 2em !important;
   }
+
   .about-profile-title {
     font-size: 4.875rem !important;
     margin-top: -2rem !important;
     margin-bottom: 2rem !important;
   }
+
   .about-profile-item1 {
     padding-top: 0;
     gap: 4rem;
     margin-bottom: 2rem;
   }
+
   .about-profile-item2 {
     gap: 0;
   }
+
   h3.about-profile-header {
     margin-bottom: 1rem !important;
   }
+
+  .about-profile-col-right .alignright {
+    margin: 0 !important;
+  }
+
+  .about-profile-col-right {
+    transform: translateY(20px);
+  }
+
   /*menu*/
   .menu-col-right.menu-col-inner .wp-block-image figure {
-    width: 258px;
+    width: 100%;
     float: left;
     margin-left: 0;
   }
+
   .trmenu-col-wp figure.wp-block-media-text__media {
     padding: var(--swl-mediatext--space) !important;
   }
+
+  .wp-block-columns.is-not-stacked-on-mobile.menu-col-spec div {
+    margin-top: 0 !important;
+  }
+
+  /*laraup*/
+  .laraup-hero-block {
+    padding-bottom: 50px !important
+  }
+
+  .laraup-cal-left-title {
+    font-size: 8.5vw !important;
+    padding-top: 1.5em !important;
+    margin-bottom: 1em !important;
+  }
+
+  .laraup-col-right {
+    transform: translate(8vw, -10vh);
+    z-index: -1;
+  }
+
+  .laraup-gallery-block {
+    margin-bottom: 6em !important;
+  }
+
+  figure.laraup-bana {
+    padding-bottom: 100px;
+  }
+
+  .laraup-col-wp {
+    margin-bottom: 0 !important;
+  }
 }
+
 /*スマホEND*/
 
 /*コンテンツ幅以上*/
@@ -576,25 +823,30 @@ div#custom_html-11 {
   .upper-header-imges figure img {
     width: calc(100vw / 5) !important;
   }
+
   .upper-header-imges figure {
     width: auto !important;
   }
 }
+
 @media (max-width: 959px) {
   .page-hero-block .swell-block-fullWide__inner.l-article {
     --swl-fw_inner_pad: var(--swl-pad_container, 4vw);
     padding: 0;
   }
+
   .page-title {
     font-size: 4.875rem !important;
   }
 }
+
 /*その他*/
 @media (max-width: 1150px) {
   .wp-block-columns.about-col-wp::after {
     right: 0;
   }
 }
+
 @media (max-width: 1050px) {
   .about-profile-item2 {
     margin-top: 0;

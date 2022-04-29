@@ -24,6 +24,17 @@ add_action('wp_enqueue_scripts', function() {
 
 }, 11);
 
+//テーマ用JS
+function myjs_enqueue(){
+
+  //ブロックスタイルJS
+  $timestamp = date( 'Ymdgis', filemtime( get_stylesheet_directory() . '/mystyle.js' ) );
+  wp_enqueue_script('myjs-style',get_stylesheet_directory_uri() . '/mystyle.js',
+  array('wp-blocks', 'wp-dom-ready', 'wp-edit-post'),
+  $timestamp);
+}
+add_action('enqueue_block_editor_assets', 'myjs_enqueue');
+
 function child_style_both(){
 
   $timestamp = date( 'Ymdgis', filemtime( get_stylesheet_directory() . '/style_both.css' ) );
