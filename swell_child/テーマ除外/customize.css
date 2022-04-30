@@ -208,7 +208,8 @@ nav#gnav {
 
 .top-section-title-jp {
   font-size: 1.25rem !important;
-  border-bottom: 1px solid #c9b5a6 !important;
+  border-bottom: 1px solid !important;
+  border-bottom-color: var(--main_color) !important;
   padding-bottom: 9px !important;
   letter-spacing: 0.1em !important;
 }
@@ -304,8 +305,8 @@ h3.about-title {
 }
 
 .wp-block-column.about-col-item2 {
-  padding-right: 68px;
-  margin-left: 70px !important;
+  padding-right: 65px;
+  margin-left: 55px !important;
   z-index: 1;
 }
 
@@ -570,7 +571,7 @@ div#custom_html-11 {
   }
 
   .menu-col-inner {
-    padding: 2.5rem 1rem;
+    padding: 1.875rem 1rem;
   }
 
   .menu-col-left-inner-item1 {
@@ -643,7 +644,7 @@ div#custom_html-11 {
   }
 
   .top-hero-title-block {
-    padding-top: 2.5em !important;
+    padding-top: 1em !important;
   }
 
   .top-hero-title-block figure {
@@ -655,6 +656,10 @@ div#custom_html-11 {
     line-height: 1.9em;
     letter-spacing: 0.2em !important;
     font-size: 1.6rem;
+  }
+
+  .top-about-wp {
+    padding-top: 5em !important;
   }
 
   .top-hero::before {
@@ -675,9 +680,9 @@ div#custom_html-11 {
 
   .top-blog-title::after {
     width: 65vw;
-    height: 100vh;
+    height: 200vh;
     left: 50%;
-    top: 50%;
+    top: 45%;
     transform: translateX(-50%);
   }
 
@@ -711,7 +716,7 @@ div#custom_html-11 {
   }
 
   .page-hero-block {
-    padding-bottom: 90px !important;
+    padding-bottom: 13vh !important;
   }
 
   .wp-block-columns.about-col-wp::after {
