@@ -242,7 +242,7 @@ nav#gnav {
 
 .top-blog-title::after {
   content: "";
-  background: #e2d3c4;
+  background: #ffe182;
   width: 780px;
   height: 477px;
   position: absolute;
