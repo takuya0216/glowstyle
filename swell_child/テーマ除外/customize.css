@@ -618,6 +618,11 @@ div#custom_html-11 {
     flex-basis: fit-content !important;
   }
 
+  .wp-block-columns.menu-col-spec>.wp-block-column:nth-child(1) {
+    flex-basis: 20% !important;
+    flex-basis: fit-content !important;
+  }
+
   .trmenu-col-wp {
     grid-template-columns: 100% !important;
   }
@@ -745,7 +750,7 @@ div#custom_html-11 {
   .about-profile-title {
     font-size: 4.875rem !important;
     margin-top: -2rem !important;
-    margin-bottom: 2rem !important;
+    margin-bottom: 2.8rem !important;
   }
 
   .about-profile-item1 {
