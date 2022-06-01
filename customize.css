@@ -11,6 +11,19 @@ svg {
   vertical-align: top;
 }
 
+/*wp6.0からカラムにギャップ2emつく*/
+.gap-0 {
+  gap: 0 !important;
+}
+
+.gap-1 {
+  gap: 1em !important;
+}
+
+.gap-15 {
+  gap: 1.5em !important;
+}
+
 /*全幅から左paddingをコンテンツサイズまで縮める*/
 .full-justify-left {
   padding-left: calc((100vw - var(--container_size, 0px)) / 2) !important;
