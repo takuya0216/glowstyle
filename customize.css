@@ -142,6 +142,7 @@ svg.icon_blog {
 .upper-header-imges {
   padding-left: calc((100vw - var(--container_size, 0px)) / 2);
   gap: 0 !important;
+  display: flex;
 }
 
 .upper-header-imges figure {
@@ -218,6 +219,7 @@ nav#gnav {
 
 .top-gallery-block {
   gap: 0 !important;
+  display: flex;
 }
 
 .top-gallery-block figure {
